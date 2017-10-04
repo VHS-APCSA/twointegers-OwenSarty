@@ -39,12 +39,43 @@ public class TwoIntegers
 	}
 	public String compare()
 	{
+		String str = "";
 		if(num1>num2)
-		System.out.println (num1 + " is larger!\n");
-		if(num1<num2)
-		System.out.println (num2 + " is larger!\n");
-		if (num1==num2)
-		System.out.println ("These numbers are equal!\n");
-		return null;
+		{
+			str = num1 + "num1 is larger!\n";
+		}
+		else if(num1<num2)
+		{
+			str = num2 + "num2 is larger\n";
+		}
+		
+		else if (num1==num2)
+		{
+			
+		}
+	}
+	public boolean oddOrEven()
+	{
+		if(num1 %2 == 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	static boolean multiples()
+	{
+		if(num1%num2 == 0)
+		{
+			System.out.printf("%d is a multiple of %d", num1, num2);
+			return true;
+		}
+		else
+		{
+			System.out.printf("%d is not a multiple of %d" num1, num2);
+			return false;
+		}
 	}
 }
