@@ -42,17 +42,18 @@ public class TwoIntegers
 		String str = "";
 		if(num1>num2)
 		{
-			str = num1 + "num1 is larger!\n";
+			str = num1 + " is larger!\n";
 		}
 		else if(num1<num2)
 		{
-			str = num2 + "num2 is larger\n";
+			str = num2 + " is larger\n";
 		}
 		
 		else if (num1==num2)
 		{
-			
+			str = "both are equal\n";
 		}
+		return str;
 	}
 	public boolean oddOrEven()
 	{
@@ -65,16 +66,14 @@ public class TwoIntegers
 			return false;
 		}
 	}
-	static boolean multiples()
+	public boolean multiples()
 	{
 		if(num1%num2 == 0)
 		{
-			System.out.printf("%d is a multiple of %d", num1, num2);
 			return true;
 		}
 		else
 		{
-			System.out.printf("%d is not a multiple of %d" num1, num2);
 			return false;
 		}
 	}
